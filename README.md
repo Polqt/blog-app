@@ -1,4 +1,2 @@
 # Quotables
 
-
-npm start
