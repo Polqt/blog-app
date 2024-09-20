@@ -4,25 +4,25 @@
     <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true">
         <div class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
     </div>
-    <div class="mx-auto max-w-2xl text-center">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About</h2>
-    </div>
+    
+    <!-- Title -->
+    <%- include('./partials/title.ejs') %>  
+
     <div class="flex justify-center px-4 sm:mt-8">
         <p class="w-full md:w-8/12 lg:w-8/12 text-lg md:text-xl lg:text-2xl leading-relaxed indent-8 text-justify text-gray-600">
-            Welcome to Quotables, your go-to platform for discovering and sharing powerful quotes that move and inspire. Whether you’re in search of timeless wisdom, motivation to push through your day, or just a little spark to ignite your creativity, Quotables is here to provide an engaging and easy-to-navigate space for all your inspirational needs. Our platform is designed to be more than just a collection of quotes—it’s a community where ideas, thoughts, and reflections come together to create something meaningful.
+            <%= firstContent %>
         </p>
     </div>
     <div class="flex justify-center px-4 mt-6">
         <p class="w-full md:w-8/12 lg:w-8/12 text-lg md:text-xl lg:text-2xl leading-relaxed indent-8 text-justify text-gray-600">
-            At the heart of Quotables is Janpol Hidalgo, a passionate 3rd-year Computer Science student at the University of Saint La Salle. Fueled by a deep love for technology and an appreciation for the power of words, Janpol set out to create this web app using Node.js and Express, aiming to blend functionality with simplicity. 
+            <%= secondContent %>
         </p>
     </div>
     <div class="flex justify-center px-4 mt-6">
         <p class="w-full md:w-8/12 lg:w-8/12 text-lg md:text-xl lg:text-2xl leading-relaxed indent-8 text-justify text-gray-600">
-            At its core, Quotables is more than just a tool for reading quotes—it’s a space for connection, reflection, and inspiration. We believe in the power of words to transform perspectives, uplift spirits, and bridge the gap between individuals from all walks of life. Every quote on this platform is a reminder that words have weight, and it’s our mission to ensure they reach those who need them most. Join us in exploring the beauty of language and the wisdom it can impart.
+            <%= thirdContent %>
         </p>
     </div>
 </div>
-
 
 <%- include('./partials/footer.ejs') %>
